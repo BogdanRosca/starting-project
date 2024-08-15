@@ -1,0 +1,15 @@
+name: Run unit tests
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu
+    steps:
+      - name: 📁 Check out code
+        uses: actions/checkout@v4
+
+      - name: 🧪 Run tests
+        run: "npm run dev"
+    
+
